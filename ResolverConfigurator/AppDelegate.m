@@ -17,6 +17,9 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    NSLog(@"Loaded...");
+    spoofer = [[DNSSpoofer alloc] init];
+    [spoofer respondWithAddr:@"10.0.0.4"];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "net.johnewart.ResolverConfigurator" in the user's Application Support directory.

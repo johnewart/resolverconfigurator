@@ -7,8 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "DNSSpoofer.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    DNSSpoofer *spoofer;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
